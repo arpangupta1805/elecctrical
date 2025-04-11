@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home Controls</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-center mb-8 text-gray-800">Smart Home Controls</h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- LED Control -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-xl font-semibold mb-4 text-gray-700">LED Control</h2>
+                <div class="flex items-center justify-between">
+                    <span class="text-gray-600">Status: <span id="ledStatus">Off</span></span>
+                    <button id="ledToggle" class="toggle-button relative inline-flex h-6 w-11 items-center rounded-full bg-gray-200 transition-colors duration-200">
+                        <span class="sr-only">Toggle LED</span>
+                        <span class="inline-block h-4 w-4 transform rounded-full bg-white transition-transform duration-200 translate-x-1"></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Door Control -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-xl font-semibold mb-4 text-gray-700">Door Control</h2>
+                <div class="flex items-center justify-between">
+                    <span class="text-gray-600">Status: <span id="doorStatus">Closed</span></span>
+                    <button id="doorToggle" class="toggle-button relative inline-flex h-6 w-11 items-center rounded-full bg-gray-200 transition-colors duration-200">
+                        <span class="sr-only">Toggle Door</span>
+                        <span class="inline-block h-4 w-4 transform rounded-full bg-white transition-transform duration-200 translate-x-1"></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Fan Control -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-xl font-semibold mb-4 text-gray-700">Fan Control</h2>
+                <div class="flex items-center justify-between">
+                    <span class="text-gray-600">Status: <span id="fanStatus">Off</span></span>
+                    <button id="fanToggle" class="toggle-button relative inline-flex h-6 w-11 items-center rounded-full bg-gray-200 transition-colors duration-200">
+                        <span class="sr-only">Toggle Fan</span>
+                        <span class="inline-block h-4 w-4 transform rounded-full bg-white transition-transform duration-200 translate-x-1"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
