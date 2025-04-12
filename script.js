@@ -1,5 +1,5 @@
 // Base URL - Change this to your IP address
-const baseUrl = 'http://192.168.158.31'; // Leave blank so it sends requests to current domain
+const baseUrl = 'http://192.168.245.31'; // Leave blank so it sends requests to current domain
 
 // Toggle button states
 const states = {
